@@ -22,9 +22,14 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-gatsby-cloud`,
+      resolve: "gatsby-plugin-gatsby-cloud",
       options: {
-        mergeSecurityHeaders: false, // boolean to turn off the default security headers
+        allPageHeaders: [
+          "X-Frame-Options: DENY",
+          "Cache-control: no-cache, no-store, must-revalidate",
+          "X-Content-Type-Options: nosniff",
+        ],
+        mergeCachingHeaders: false,
       },
     },
     "gatsby-plugin-sharp",
