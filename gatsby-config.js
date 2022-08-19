@@ -10,7 +10,7 @@ module.exports = {
     title: "Gatsby Contentful Homepage Starter",
     author: `Gatsby`,
     description: "A Gatsby Starter for building homepages with Contentful",
-  },/
+  },
   plugins: [
     {
       resolve: "gatsby-source-contentful",
