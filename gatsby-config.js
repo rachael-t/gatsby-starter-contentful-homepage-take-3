@@ -21,17 +21,17 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST,
       },
     },
-    {
-      resolve: "gatsby-plugin-gatsby-cloud",
-      options: {
-        allPageHeaders: [
-          "X-Frame-Options: DENY",
-          "Cache-control: no-cache, no-store, must-revalidate",
-          "X-Content-Type-Options: nosniff",
-        ],
-        mergeCachingHeaders: false,
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-gatsby-cloud",
+    //   options: {
+    //     allPageHeaders: [
+    //       "X-Frame-Options: DENY",
+    //       "Cache-control: no-cache, no-store, must-revalidate",
+    //       "X-Content-Type-Options: nosniff",
+    //     ],
+    //     mergeCachingHeaders: false,
+    //   },
+    // },
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
     "gatsby-transformer-sharp",
